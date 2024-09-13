@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            width: 48%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .portfolio-item h3 {
+            font-size: 22px;
+            margin: 15px;
+            color: #333;
+        }
+
+        .portfolio-item p {
+            font-size: 16px;
+            margin: 0 15px 15px 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="photo">
+            <img src="https://ru.armpower.net/img/465x305/8f4b71_461962.jpg" alt="Мое фото">
+        </div>
+        <div class="info">
+            <h1>Мамалыга Александр Витальевич</h1>
+            <p class="title">Начинающий Веб-разработчик</p>
+            <p><strong>Что умею:</strong> Веб-разработка, программирование, дизайн.</p>
+            <p><strong>Чем увлекаюсь:</strong> Видеоигры, различный спорт.</p>
+            <p><strong>Почему веб-разработка:</strong> Данное направление показалось мне наиболее интересным для меня. Веб-разработка позволяет мне постоянно учиться и развиваться.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Свяжитесь со мной по email: <a href="mailto:mamalyga199o@mail.ru">mamalyga199o@mail.ru</a></p>
+    </footer>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.contact-btn');
+            btn.addEventListener('click', () => {
+                alert('Спасибо за интерес! Свяжитесь со мной по email.');
+            });
+        });
+    </script>
+</body>
+</html>
